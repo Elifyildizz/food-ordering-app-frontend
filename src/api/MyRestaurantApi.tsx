@@ -1,4 +1,4 @@
-import { Restaurant } from "@/types";
+import { Order, Restaurant } from "@/types";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useMutation, useQuery} from "react-query";
 import { toast } from "sonner";
@@ -114,7 +114,7 @@ export const useUpdateMyRestaurant = () => {
   return { updateRestaurant, isLoading };
 };
 
-/*export const useGetMyRestaurantOrders = () => {
+export const useGetMyRestaurantOrders = () => {
   const { getAccessTokenSilently } = useAuth0();
 
   const getMyRestaurantOrdersRequest = async (): Promise<Order[]> => {
@@ -192,6 +192,5 @@ export const useUpdateMyRestaurantOrder = () => {
   }
 
   return { updateRestaurantStatus, isLoading };
-
+  
 };
-*/
