@@ -15,7 +15,7 @@ import { useEffect } from "react";
 const formSchema = z
   .object({
     restaurantName: z.string({
-      required_error: "restuarant name is required",
+      required_error: "restaurant name is required",
     }),
     city: z.string({
       required_error: "city is required",
